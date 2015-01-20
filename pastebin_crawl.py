@@ -58,6 +58,13 @@ class PastebinSpider(CrawlSpider):
         collection.insert(items)
         return items
 
+#Remove duplicates from MongoDB :
+collection.ensureIndex( { url:1,paste:1}, { unique:true, dropDups:true } )
+#delete all empty documents ( if paste is empty then there is no message to process ) 
+collection.remove( { "paste" : [] } )
+
 print "-------------Check for data in mongoDB-------------------"
+
+
 
     
