@@ -61,9 +61,10 @@ for document in data:
 				count=count+1
 				variable=1
 			#Split paste text in sentences
+
 		       
-			else:
-				pass
+		else:
+			pass
         if variable == 1:
 		txt = j
         	sentences = nltk.tokenize.sent_tokenize(txt)
