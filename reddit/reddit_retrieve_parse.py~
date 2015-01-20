@@ -13,7 +13,6 @@ collection.remove({})
 #reddit api gives a lot of options in retrieving information you want
 #for ex the new 100 posts : http://www.reddit.com/r/blackhat/new.json?sort=new&limit=100
 #or if you want directly get the posts in json format, simply /.json
-
 # Limit : default: 25, maximum: 100
 response = urllib2.urlopen('http://www.reddit.com/r/blackhat/.json?limit=50')
 
